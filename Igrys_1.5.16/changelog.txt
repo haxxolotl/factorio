@@ -1,0 +1,225 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.5.16
+Date: 2025-11-27
+  Bugfixes:
+    - Fixed tile transitions (got a tip from oobanooba :)
+---------------------------------------------------------------------------------------------------
+Version: 1.5.15
+Date: 2025-11-06
+  Bugfixes:
+    - Oil lake tiles are now named
+  Tweaks:
+    - Made diagonal inserter mod optional
+    - Magic part have stack size of 2 instead of 1
+    - Setting to add mineral science pack to promethium tech (default: enabled)
+    - Glassworking 3 no longer requires metallurgic science
+---------------------------------------------------------------------------------------------------
+Version: 1.5.14
+Date: 2025-11-05
+  Bugfixes:
+    - Fixed Magic Part 2 recipe icon
+---------------------------------------------------------------------------------------------------
+Version: 1.5.13
+Date: 2025-11-05
+  Bugfixes:
+    - Fixed technology icon for glassworking
+    - Resolved issue with custom and automatic fluidbox indexing (hopefully)
+  Tweaks:
+    - Changed magic part 2 sprite to be more distinct from magic glass
+---------------------------------------------------------------------------------------------------
+Version: 1.5.12
+Date: 2025-11-01
+  Bugfixes:
+    - Removed optional dependencies, moved compatibility changes to data-updates, hopefully fixes cyclic dependencies issue
+---------------------------------------------------------------------------------------------------
+Version: 1.5.11
+Date: 2025-10-31
+  Bugfixes:
+    - Compatibility with (Dredgeworks?) Deep Igrys Stone
+    - Compatibility with Planetaris Arig, reintroducing the referenced setting, marking as hidden
+---------------------------------------------------------------------------------------------------
+Version: 1.5.10
+Date: 2025-10-31
+  Features:
+    - Hard Stone patches have a new look
+    - Glass has a new look and is now magic glass
+  Tweaks:
+    - Buffed alternative red science pack, gives 8 packs instead of 5
+    - Buffed result number for alternative: green circuit, rail
+    - Rich Magic Part 3 requires 1 Cermite instead of 3
+  Bugfixes:
+    - Green Circuit is now craftable in the electronics machine
+---------------------------------------------------------------------------------------------------
+Version: 1.5.9
+Date: 2025-10-21
+  Bugfixes:
+    - Fixed Krastorio 2 compatibility after it's update
+---------------------------------------------------------------------------------------------------
+Version: 1.5.8
+Date: 2025-10-15
+  Features:
+    - Added achievement for visiting Igrys
+  Tweaks:
+    - Fixed tesseract spelling
+  Bugfixes:
+    - Fixed error when loading with Nexus, checking if promethium science pack.unit not nil
+---------------------------------------------------------------------------------------------------
+Version: 1.5.7
+Date: 2025-08-25
+  Features:
+    - Russian Translation
+---------------------------------------------------------------------------------------------------
+Version: 1.5.6
+Date: 2025-08-25
+  Bugfixes:
+    - Fixed the glass rocket silo not being better than the base one
+---------------------------------------------------------------------------------------------------
+Version: 1.5.5
+Date: 2025-08-25
+  Tweaks:
+    - Metallurgic science prerequisite to glassworking 3
+    - Removed obsolete files from the mod zip
+    - Moved the plastic bar recipe behind the base one
+    - Made the glass rocket silo require 50 parts, but the glass rocket part recipe create 3 parts instead of 1, aka a slight buff and simplification
+    - Glass rocket silo tech requires only mineral science pack, now you are able to build it, without needing to export it via base rocket silo first
+    - For the same reason, glass rocket silo no longer needs rich teseracts, base ones instead
+    - Added mineral science pack to the research productivity and promethium science pack, took me 2 months to realize, that planets lib is no longer doing that
+    - Moved the science enhancer machine behind the rich teseract tech, because well it requires rich teseracts to build
+  Bugfixes:
+    - Compatibility with Krastorio's mineral pumpjack
+    - Fix for Super Farm, check against null science packs
+---------------------------------------------------------------------------------------------------
+Version: 1.5.4
+Date: 2025-07-16
+  Tweaks:
+    - Igrys is no longer considered a moon of Vulcanus, it was an oversight
+  Bugfixes:
+    - Science Enhancer Machine now recognizes all science packs that can be used in the base game labs
+---------------------------------------------------------------------------------------------------
+Version: 1.5.3
+Date: 2025-07-13
+  Tweaks:
+    - Oil rivers are now walkable and can be covered by the foundation
+---------------------------------------------------------------------------------------------------
+Version: 1.5.2
+Date: 2025-07-12
+  Bugfixes:
+    - Compatibility with RITEG and Metal and Stars
+    - Fixed the "Enhance Modded Science Packs" not having any effect
+  Tweaks:
+    - Planet's description now mentiones the lack of iron
+    - Copper productivity now impacts casting of copper plates
+---------------------------------------------------------------------------------------------------
+Version: 1.5.1
+Date: 2025-06-18
+  Features:
+    - Spanish translation, **courtesy of Marks12520**
+---------------------------------------------------------------------------------------------------
+Version: 1.5.0
+Date: 2025-05-12
+  Features:
+    - New Map Gen
+    - New Light Oil Lakes
+  Tweaks:
+    - Added an option for the glass to have a different tint and name, to avoid confusion with the glass from other mods
+---------------------------------------------------------------------------------------------------
+Version: 1.4.1
+Date: 2025-05-09
+  Bugfixes:
+    - Fixed spidertron having the wrong recycle recipe
+---------------------------------------------------------------------------------------------------
+Version: 1.4.0
+Date: 2025-04-24
+  Features:
+    - New Great Art for all of the Igrys custom machinery, **courtesy of KaueNP**
+    - New Magic Field effect present on the surface of Igrys, **courtesy of Notnotmelon**
+  Changes:
+    - Copper Plate Machine is slightly faster, but is now 4x4
+    - Science Enhancer Machine is now 5x5
+---------------------------------------------------------------------------------------------------
+Version: 1.3.3
+Date: 2025-04-24
+  Tweaks:
+    - Renamed recipe: igrys-magic-fluid-strong-barrel → igrys-magic-fluid-barrel
+    - Renamed recipe: empty-igrys-magic-fluid-strong-barrel → empty-igrys-magic-fluid-barrel
+    - Renamed item: igrys-magic-fluid-strong-barrel → igrys-magic-fluid-barrel
+---------------------------------------------------------------------------------------------------
+Version: 1.3.2
+Date: 2025-04-23
+  Tweaks:
+    - Renamed recipe: igrys-strong-barrel-filled-magic-fluid → igrys-magic-fluid-strong-barrel
+    - Renamed recipe: igrys-empty-strong-barrel-filled-magic-fluid → empty-igrys-magic-fluid-strong-barrel
+    - Renamed item: igrys-strong-barrel-filled-magic-fluid → igrys-magic-fluid-strong-barrel
+---------------------------------------------------------------------------------------------------
+Version: 1.3.1
+Date: 2025-04-11
+  Features:
+    - New diagonal inserter, integrated from diagonal inserter mod
+---------------------------------------------------------------------------------------------------
+Version: 1.3.0
+Date: 2025-04-11
+  Features:
+    - New Cermite resource, which can be created from cermet.
+  Changes:
+    - Magic part 3 enriching now requires cermite instead of bricks.
+    - Magic parts now have stack size of 1.
+    - Rebalanced recipes for Magic Pumpjack, Science Enhancer Machine, Strong Barrel.
+  Tweaks:
+    - Added custom subgroup and moved items in the menu.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.2
+Date: 2025-04-9
+  Bugfixes:
+    - New improved enriched science pack recipe unlocking method, fixes issues with the recipes not unlocking properly
+---------------------------------------------------------------------------------------------------
+Version: 1.2.1
+Date: 2025-04-8
+  Bugfixes:
+    - Fixed Copper Plate Machine being enabled when placed by a robot during the day
+---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: 2025-04-7
+  Features:
+    - New Cermet resource, which spoils into steel plates
+  Changes:
+    - Removed the steel plate recipe, now can be acquired through cermet
+    - Sulfuric acid requires cermet instead of steel plates
+    - Removed alternative recipe production science recipe, realized that it can be made normally:)
+  Bugfixes:
+    - Fixed planet tech icon
+  Tweaks:
+    - Optional spidertron steal setting
+    - Added the use of cryogenic plant for alternative plastic and sulfur
+---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 2025-04-3
+  Changes:
+    - Rebalanced recipes with rich teseract as an ingredient
+  Tweaks:
+    - Added new planet icon in better resolution 
+  Bugfixes:
+    - Fixed Igrys Ruins appearing on Nauvis
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2025-04-2
+  Features:
+    - Copper Machines work only at night
+    - New Ruins can be found on the planet
+  Changes:
+    - Made Copper Machines faster to compensate for the night-only operation
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 2025-04-2
+  Compatibility:
+    - Added setting to integrate with modded science packs
+      By default the mod will only enrich vanilla and Igrys's science packs
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 2025-04-1
+  Compatibility:
+    - Fixed compatibility with Janus and Alien Biomes
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2025-03-31
+  Major Features:
+    - Initial release of the mod.

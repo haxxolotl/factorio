@@ -1,0 +1,68 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.7.3
+Date: 13. 11. 2024
+  Changes:
+    - The "Basic vehicles" technology now has the automation science pack technology as a prerequisite, for tech tree clarity.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.7.2
+Date: 09. 11. 2024
+  Bugfixes:
+    - Fixed load error in Factorio 2.0.16 caused by a missing item_sounds global.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.7.1
+Date: 06. 11. 2024
+  Info:
+    - Updated for Factorio 2.0.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.1
+Date: 24. 11. 2020
+  Info:
+    - Updated for Factorio 1.1.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.5.2
+Date: 07. 08. 2020
+  Locale:
+    - Added Japanese translation.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.5.1
+Date: 28. 01. 2020
+  Info:
+    - Updated for Factorio 0.18.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.2
+  Changes:
+    - Added temporary hr graphics courtesy of Kamsta99. (There will be re-rendered hr graphics with wheel movement eventually).
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.1
+  Info:
+    - Updated for Factorio 0.17.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.3.1
+  Info:
+    - Updated for Factorio 0.16.
+
+  Changes:
+    - The hauler now deals less damage when ramming.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.3
+  Changes:
+    - Decreased damage resistance.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.2
+  Changes:
+    - Hauler now requires tech
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+  Info:
+    - Updated for Factorio 0.15.
