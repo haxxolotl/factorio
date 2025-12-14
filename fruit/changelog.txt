@@ -1,0 +1,426 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.51.0
+Date: 2025-03-27
+  Changes:
+    - Exclude some items that don't make sense from being created as order @haxxolotl
+    - Rebalance farm crafting time from 3600 to 600 @haxxolotl
+    - Rebalance restaurant science pack craft amount from 1 to 5 @haxxolotl
+    - Fix some recipes missing from farm (chili, cocoa-pod, coffee-seed, rice-grain, ginger, agave) @haxxolotl
+    - Remove recipe-less almond milk @haxxolotl
+    - Make player-force animals (ones spawning from playing made hatching) also lay eggs @haxxolotl
+    - Fix an game freeze edge case where Minime dungeon surface with active animal can't find tile to spill egg spawn @haxxolotl
+
+---------------------------------------------------------------------------------------------------
+Version: 1.50.0
+Date: 2025-03-18
+  Changes:
+    - Player force animals should also lay eggs. @haxxolotl
+    - Fix yeast cultivation recipe @haxxolotl
+    - Fix farm recipes doesn't' refresh spoilage @haxxolotl
+    - Fix restaurant recipe change voiding input items @haxxolotl
+
+---------------------------------------------------------------------------------------------------
+Version: 1.40.0
+Date: 2025-03-04
+  Changes:
+    - Fix jackfruit and carambola issues
+---------------------------------------------------------------------------------------------------
+Version: 1.30.1
+Date: 2025-03-04
+  Changes:
+    - Fix cerysian-science-pack issues and optimize multiple details.
+---------------------------------------------------------------------------------------------------
+Version: 1.30.0
+Date: 2025-03-04
+  Changes:
+    - Fix issues with yeast.
+---------------------------------------------------------------------------------------------------
+Version: 1.24.0
+Date: 2025-01-18
+  Changes:
+    - Fix issues https://mods.factorio.com/mod/zoo-animal/discussion/67832c0ca274cdf2fe33cc62.
+---------------------------------------------------------------------------------------------------
+Version: 1.23.0
+Date: 2025-01-17
+  Changes:
+    - update woodoria .
+
+---------------------------------------------------------------------------------------------------
+Version: 1.22.2
+Date: 2025-01-17
+  Changes:
+    - update graphics.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.22.0
+Date: 2025-01-06
+  Changes:
+    - add Organic Fertilizer.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.21.0
+Date: 2025-01-04
+  Changes:
+    - add poop.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.20.0
+Date: 2025-01-04
+  Changes:
+    - Reduce merge dependencies.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.13.0
+Date: 2025-01-03
+  Changes:
+    - add incubator.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.12.0
+Date: 2025-01-01
+  Changes:
+    - Add ginger.
+    - Add potato-processing.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.11.3
+Date: 2024-12-29
+  Changes:
+    - add wood to tree result.
+    - add setting to change tree map gen.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.11.1
+Date: 2024-12-27
+  Changes:
+    - Fix issues with Cerys-Moon-of-Fulgora.
+---------------------------------------------------------------------------------------------------
+Version: 1.11.0
+Date: 2024-12-27
+  Changes:
+    - Add duck.
+---------------------------------------------------------------------------------------------------
+Version: 1.10.5
+Date: 2024-12-27
+  Changes:
+    - Fix issues and optimize multiple details.
+---------------------------------------------------------------------------------------------------
+Version: 1.10.4
+Date: 2024-12-27
+  Changes:
+    - compatible with Alien biome now.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.10.2
+Date: 2024-12-27
+  Changes:
+    - Fix issues with cow.
+---------------------------------------------------------------------------------------------------
+Version: 1.10.1
+Date: 2024-12-27
+  Changes:
+    - add Oak Barrel.
+    - add brewing.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.10.0
+Date: 2024-12-26
+  Changes:
+    - add more plant.
+    - artichoke
+    - asparagus
+    - corn
+    - beetroot
+    - brussels_sprout
+    - cauliflower
+    - celery
+    - chayote
+    - parsnip
+    - daikon
+    - jicama
+    - kale
+    - leek
+    - turnip
+    - spinach
+    - okra
+
+---------------------------------------------------------------------------------------------------
+Version: 1.9.5
+Date: 2024-12-23
+  Changes:
+    - I'm organizing the tech tree.
+    - I added a lot of recipes, including the basic brewing method.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.9.2
+Date: 2024-12-23
+  Changes:
+    - Fix issues and optimize multiple details.
+---------------------------------------------------------------------------------------------------
+Version: 1.9.1
+Date: 2024-12-23
+  Changes:
+    - Fix plant autoplace.
+---------------------------------------------------------------------------------------------------
+Version: 1.9.0
+Date: 2024-12-23
+  Changes:
+    - Overhauled animal loot system: Cows now drop raw beef, leather, and milk buckets; chickens drop raw chicken, eggs, and feathers; sheep drop raw mutton, wool, and leather. Drop rates and quantities have been carefully balanced.
+---------------------------------------------------------------------------------------------------
+Version: 1.8.11
+Date: 2024-12-21
+  Changes:
+    - Fix issues and optimize multiple details.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.8.3
+Date: 2024-12-20
+  Changes:
+    - Add chicken.
+---------------------------------------------------------------------------------------------------
+Version: 1.8.2
+Date: 2024-12-20
+  Changes:
+    - Add Coconut Milk,Vanilla Milkshake,Almond Milk,Brandy,Vodka,Whiskey,Beer,Dark Rum,White Rum,Sake,Tequila,Wine,White Wine,Maotai,Champagne,Cream Puff,Brownie,Caramel Pudding,Donut,Tiramisu,Kung Pao Chicken,Tangyuan,Dumpling,Fried Chicken,Braised Pork,Cucumber Salad,Mapo Tofu,Carrot Juice,Cola,Pudding,Chocolate Milkshake
+---------------------------------------------------------------------------------------------------
+Version: 1.8.1
+Date: 2024-12-19
+  Changes:
+    - Fix issues and optimize multiple details.
+---------------------------------------------------------------------------------------------------
+Version: 1.8.0
+Date: 2024-12-19
+  Changes:
+    - food-command-center now finish.
+---------------------------------------------------------------------------------------------------
+Version: 1.7.0
+Date: 2024-12-18
+  Changes:
+    - Introducing the Card Enhancement Machine! Enhance and upgrade cards, but beware: higher levels increase failure risk, resulting in card destruction. Think carefully before enhancing.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.6.1
+Date: 2024-12-17
+  Changes:
+    - Fix issues and optimize multiple details.
+---------------------------------------------------------------------------------------------------
+Version: 1.6.0
+Date: 2024-12-17
+  Changes:
+    - add more technology processing.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.5.14
+Date: 2024-12-17
+  Changes:
+    - add ru translation. thanks, @PinnedFox
+
+---------------------------------------------------------------------------------------------------
+Version: 1.5.10
+Date: 2024-12-16
+  Changes:
+    - Fix issues and optimize multiple details.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.5.9
+Date: 2024-12-16
+  Changes:
+    - add washer.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.5.8
+Date: 2024-12-16
+  Changes:
+    - add chocolate processing.
+    - add coffee processing.
+    - add rice processing.
+    - add wheat processing.
+    - add yarn processing.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.5.8
+Date: 2024-12-15
+  Changes:
+    - add Rus
+---------------------------------------------------------------------------------------------------
+Version: 1.5.6
+Date: 2024-12-15
+  Changes:
+    - Fix issues and optimize multiple details.
+---------------------------------------------------------------------------------------------------
+Version: 1.5.5
+Date: 2024-12-15
+  Changes:
+    - Fix issues and optimize multiple details.
+---------------------------------------------------------------------------------------------------
+Version: 1.5.4
+Date: 2024-12-15
+  Changes:
+    - Add more machines.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.5.3
+Date: 2024-12-15
+  Changes:
+    - update recipe.
+---------------------------------------------------------------------------------------------------
+Version: 1.5.2
+Date: 2024-12-15
+  Changes:
+    - Add some machine, pot.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.5.1
+Date: 2024-12-15
+  Changes:
+    - add icecream.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.5.0
+Date: 2024-12-14
+  Changes:
+    - Add more plant.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.4.7
+Date: 2024-12-13
+  Changes:
+    - Add more plant.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.4.6
+Date: 2024-12-13
+  Changes:
+    - add jam
+
+---------------------------------------------------------------------------------------------------
+Version: 1.4.4
+Date: 2024-12-13
+  Changes:
+    - add juice
+
+---------------------------------------------------------------------------------------------------
+Version: 1.4.3
+Date: 2024-12-13
+  Changes:
+    - Add sugarcane
+
+---------------------------------------------------------------------------------------------------
+Version: 1.4.2
+Date: 2024-12-13
+  Changes:
+    - Fix issues and optimize multiple details.
+
+---------------------------------------------------------------------------------------------------
+Version: 1.4.0
+Date: 2024-12-13
+  Add:
+    - Add many Tree Plant
+
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2024-11-30
+
+  Add: vegetable
+
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2024-11-30
+
+  Add:
+    - Apple
+    - Banana
+    - Orange
+    - Strawberry
+    - Watermelon
+    - Pear
+    - Kiwi
+    - Pineapple
+    - Grape
+    - Peach
+    - Mango
+    - Papaya
+    - Blueberry
+    - Plum
+    - Pomegranate
+    - Jackfruit
+    - Lychee
+    - Raspberry
+    - Blackberry
+    - Dragon_fruit
+    - Cantaloupe
+    - Passion_fruit
+    - Cherry
+    - Starfruit
+    - Tangerine
+    - Guava
+    - Carambola
+    - Coconut
+    - Rambutan
+    - Durian
+    - Longan
+    - Fig
+    - Tamarind
+    - Soursop
+    - Gooseberry
+    - Sapodilla
+    - Apricot
+    - Nectarine
+    - Cranberry
+    - Persimmon
+    - Elderberry
+    - Currant
+    - Loquat
+    - Mulberry
+    - Miracle_fruit
+    - Lemon
+    - Grapefruit
+    - Prune
+    - 苹果
+    - 香蕉
+    - 橙子
+    - 草莓
+    - 西瓜
+    - 梨
+    - 猕猴桃
+    - 菠萝
+    - 葡萄
+    - 桃子
+    - 芒果
+    - 木瓜
+    - 蓝莓
+    - 李子
+    - 石榴
+    - 菠萝蜜
+    - 荔枝
+    - 覆盆子
+    - 黑莓
+    - 火龙果
+    - 哈密瓜
+    - 百香果
+    - 樱桃
+    - 杨桃
+    - 橘子
+    - 番石榴
+    - 五角星水果
+    - 椰子
+    - 龙眼
+    - 榴莲
+    - 龙眼
+    - 无花果
+    - 罗望子
+    - 酸豆
+    - 醋栗
+    - 人参果
+    - 杏
+    - 油桃
+    - 蔓越莓
+    - 柿子
+    - 接骨木果
+    - 醋栗
+    - 枇杷
+    - 桑葚
+    - 奇迹果
+    - 柠檬
+    - 西柚
+    - 西梅
