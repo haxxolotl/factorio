@@ -1,0 +1,40 @@
+{
+  "name": "aai-programmable-vehicles",
+  "version": "0.8.5",
+  "title": "AAI Programmable Vehicles",
+  "author": "Earendel",
+  "dependencies": [
+    "base >= 2.0.0",
+    "aai-signals >= 0.7.0",
+    "informatron >= 0.4.0",
+    "? aai-zones >= 0.7.0",
+    "? aai-programmable-structures >= 0.8.0",
+    "? aai-industry >= 0.3.2",
+    "? aai-vehicles-miner >= 0.7.0",
+    "? aai-vehicles-hauler >= 0.7.0",
+    "? aai-vehicles-chaingunner >= 0.7.0",
+    "? aai-vehicles-flame-tumbler >= 0.7.0",
+    "? aai-vehicles-flame-tank >= 0.6.0",
+    "? aai-vehicles-laser-tank >= 0.7.0",
+    "? aai-vehicles-warden >= 0.6.0",
+    "? bullet-trails >= 0.7.0",
+    "? equipment-gantry >= 0.2.0"
+  ],
+  "description": "Makes vehicles act like RTS units. Control them using a remote control handset, or program them with circuit conditions and zones. Can be used for base enemy base assault, patrols, friendly base navigation, vehicle-based mining, and more advanced applications. Works with vanilla and modded vehicles. Visit the mod portal page for a full feature list or the forums for tutorials.",
+  "factorio_version": "2.0",
+  "homepage": "https://discord.gg/t6BtZqC",
+  "package": {
+    "git_publish_branch": "master",
+    "ignore": ["**"],
+    "extra": [
+      { 
+        "root": ".build"
+      }
+    ],
+    "scripts": {
+      "datestamp": "sh ./build-scripts/datestamp.sh",
+      "prepackage": "sh ./build-scripts/prepackage.sh",
+      "postpublish": "sh ./build-scripts/postpublish.sh"
+    }
+  }
+}

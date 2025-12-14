@@ -1,0 +1,26 @@
+data:extend({
+  {
+    type = "shortcut",
+    name = "unit-remote-control",
+    localised_name = { "item-name.unit-remote-control"},
+    order = "a",
+    action = "spawn-item",
+    item_to_spawn = "unit-remote-control",
+    icon = "__aai-programmable-vehicles__/graphics/icons/unit-remote-control.png",
+    icon_size = 64,
+    small_icon = "__aai-programmable-vehicles__/graphics/icons/unit-remote-control.png",
+    small_icon_size = 64,
+  },
+  {
+    type = "shortcut",
+    name = "path-remote-control",
+    localised_name = { "item-name.path-remote-control"},
+    order = "a",
+    action = "spawn-item",
+    item_to_spawn = "path-remote-control",
+    icon = "__aai-programmable-vehicles__/graphics/icons/path-remote-control.png",
+    icon_size = 64,
+    small_icon = "__aai-programmable-vehicles__/graphics/icons/path-remote-control.png",
+    small_icon_size = 64,
+  },
+})
