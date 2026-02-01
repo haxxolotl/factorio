@@ -219,10 +219,10 @@ for name, color in pairs(fruit) do
             category = "icecream",
         }:add_unlock("ice-cream-making")
 
-        table.insert(orders_recipe.restaurant, name .. "-juice")
-        table.insert(orders_recipe.restaurant, name .. "-jam")
-        table.insert(orders_recipe.restaurant, name .. "-pie")
-        table.insert(orders_recipe.restaurant, name .. "-icecream")
+        orders_recipe.add_restaurant(name .. "-juice", 1)
+        orders_recipe.add_restaurant(name .. "-jam", 1)
+        orders_recipe.add_restaurant(name .. "-pie", 1)
+        orders_recipe.add_restaurant(name .. "-icecream", 1)
 
     end
 end

@@ -19,7 +19,7 @@ local function add_order_recipe(ingredients, results, category, index)
             enabled = true,
             -- 是否启用此配方解锁其物品产品以显示在选择列表（物品过滤器、物流请求等）中。
             unlock_results = false,
-            allow_productivity = false,
+            allow_productivity = true,
             auto_recycle = false,
             allow_decomposition = false,
             --preserve_products_in_machine_output = true,
@@ -34,6 +34,13 @@ end
 
 local packname = "restaurant-science-pack"
 local packnamerubbish = packname .. "-rubbish" -- "restaurant-science-pack-rubbish"
+local reward_by_ingredients = {
+    [1] = 1,
+    [2] = 3,
+    [3] = 5,
+    [4] = 8,
+    [5] = 13,
+}
 
 local trigger = {
     items_per_trigger = 1,
@@ -95,8 +102,20 @@ data:extend {
 
 -------
 local PRODUCTS = orders_recipe.restaurant
+local PRODUCT_NAMES = {}
+local PRODUCT_BONUS = {}
 
-local NUM_PRODUCTS = #PRODUCTS
+for index, entry in ipairs(PRODUCTS) do
+    if type(entry) == "table" then
+        PRODUCT_NAMES[index] = entry.name
+        PRODUCT_BONUS[entry.name] = entry.bonus or 0
+    else
+        PRODUCT_NAMES[index] = entry
+        PRODUCT_BONUS[entry] = 0
+    end
+end
+
+local NUM_PRODUCTS = #PRODUCT_NAMES
 local NUM_ORDERS = 1000
 
 -- 生成一个随机订单
@@ -112,8 +131,8 @@ local function generate_random_order()
         until not selected_products[product_index]
 
         selected_products[product_index] = true
-        local product_id = PRODUCTS[product_index] -- 获取产品 ID
-        order[product_id] = math.random(1, 10)
+        local product_id = PRODUCT_NAMES[product_index] -- 获取产品 ID
+        order[product_id] = 1
     end
     return order
 end
@@ -145,10 +164,14 @@ local orders = generate_orders(NUM_ORDERS)
 local index = 1
 for k, od in pairs(orders) do
     local ingredients = {}
+    local bonus_amount = 0
     for name, amount in pairs(od) do
         table.insert(ingredients, { type = "item", name = name, amount = amount, ignored_by_stats = 1 })
+        bonus_amount = bonus_amount + (PRODUCT_BONUS[name] or 0)
     end
-    local results = { { type = "item", name = packname, amount = 5 } }
+    local num_ingredients = #ingredients
+    local pack_amount = (reward_by_ingredients[num_ingredients] or 1) + bonus_amount
+    local results = { { type = "item", name = packname, amount = pack_amount } }
     add_order_recipe(ingredients, results, "fruit_order_restaurant", index)
     index = index + 1
 end

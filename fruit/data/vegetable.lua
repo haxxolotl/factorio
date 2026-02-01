@@ -65,7 +65,7 @@ for name, color in pairs(items) do
         icon_size = 512,
         subgroup = "vegetable",
         order = "a[" .. name .. "]",
-        spoil_ticks = feature_flags["spoiling"] and 10 * minute or nil,
+        spoil_ticks = feature_flags["spoiling"] and 60 * minute or nil,
         spoil_result = mods["space-age"] and "spoilage" or nil,
         stack_size = 100,
     }
@@ -88,7 +88,7 @@ for name, color in pairs(items) do
     end
 
     if not excludes[name] then
-        table.insert(orders_recipe.restaurant, name)
+        orders_recipe.add_restaurant(name, 0)
     end
 
 end

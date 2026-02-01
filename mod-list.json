@@ -219,11 +219,6 @@
     },
     
     {
-      "name": "Battleship",
-      "enabled": false
-    },
-    
-    {
       "name": "beacon-interface",
       "enabled": true
     },
@@ -374,6 +369,11 @@
     },
     
     {
+      "name": "ChangeInserterDropLane",
+      "enabled": true
+    },
+    
+    {
       "name": "CharacterModHelper",
       "enabled": true
     },
@@ -479,6 +479,11 @@
     },
     
     {
+      "name": "Custom-Production-UI-Fixed",
+      "enabled": true
+    },
+    
+    {
       "name": "cybersyn",
       "enabled": true
     },
@@ -520,6 +525,16 @@
     
     {
       "name": "diesel_engine",
+      "enabled": true
+    },
+    
+    {
+      "name": "diesel_machines",
+      "enabled": true
+    },
+    
+    {
+      "name": "DistributionRequestPlanner",
       "enabled": true
     },
     
@@ -590,6 +605,11 @@
     
     {
       "name": "EpicArtillerySounds",
+      "enabled": true
+    },
+    
+    {
+      "name": "equipment-gantry",
       "enabled": true
     },
     
@@ -795,6 +815,11 @@
     
     {
       "name": "HelicopterRevival",
+      "enabled": true
+    },
+    
+    {
+      "name": "helmod",
       "enabled": true
     },
     
@@ -1184,8 +1209,8 @@
     },
     
     {
-      "name": "Long_Range_Delivery_Drones",
-      "enabled": false
+      "name": "linox",
+      "enabled": true
     },
     
     {
@@ -1529,6 +1554,16 @@
     },
     
     {
+      "name": "redrawn-space-compat-fixes",
+      "enabled": true
+    },
+    
+    {
+      "name": "Redrawn-Space-Connections",
+      "enabled": true
+    },
+    
+    {
       "name": "remove-productivity-cap",
       "enabled": true
     },
@@ -1545,7 +1580,7 @@
     
     {
       "name": "Repair_Turret",
-      "enabled": true
+      "enabled": false
     },
     
     {
@@ -1625,6 +1660,11 @@
     
     {
       "name": "secretas",
+      "enabled": true
+    },
+    
+    {
+      "name": "shchierbin",
       "enabled": true
     },
     
@@ -1725,6 +1765,11 @@
     
     {
       "name": "space-exploration-graphics-4",
+      "enabled": true
+    },
+    
+    {
+      "name": "space-exploration-graphics-5",
       "enabled": true
     },
     
@@ -1890,6 +1935,11 @@
     
     {
       "name": "Wood-Walls",
+      "enabled": true
+    },
+    
+    {
+      "name": "wooden_platform",
       "enabled": true
     },
     

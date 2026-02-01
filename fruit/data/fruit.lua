@@ -70,7 +70,7 @@ for name, color in pairs(fruit) do
         fuel_category = "fruit",
         subgroup = "fruit",
         order = "a[" .. name .. "]",
-        spoil_ticks = feature_flags["spoiling"] and 10 * minute or nil,
+        spoil_ticks = feature_flags["spoiling"] and 60 * minute or nil,
         spoil_result = mods["space-age"] and "spoilage" or nil,
         stack_size = 100,
     }
@@ -90,7 +90,7 @@ for name, color in pairs(fruit) do
         }:add_unlock("fruit-cultivation")
     end
 
-    --table.insert(orders_recipe.restaurant, name)
+    orders_recipe.add_restaurant(name, 0)
 
 end
 

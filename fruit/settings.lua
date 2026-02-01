@@ -12,4 +12,10 @@ data:extend({
         default_value = 1,
         allowed_values = { 0.1, 0.5, 1, 2, 5, 10 },
     },
+    {
+        type = "bool-setting",
+        name = "fruit-hostile-animals",
+        setting_type = "runtime-global",
+        default_value = false
+    },
 })

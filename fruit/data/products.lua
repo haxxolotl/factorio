@@ -51,11 +51,11 @@ for name, color in pairs(items) do
             icon_size = 512,
             subgroup = "fruit_product",
             order = "a[" .. name .. "]",
-            spoil_ticks = feature_flags["spoiling"] and 12 * minute or nil,
+            spoil_ticks = feature_flags["spoiling"] and 60 * minute or nil,
             stack_size = 100,
         },
     })
 
-    table.insert(orders_recipe.restaurant, name)
+    orders_recipe.add_restaurant(name, 2)
 
 end

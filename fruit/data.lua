@@ -36,6 +36,9 @@ end
 
 orders_recipe = {}
 orders_recipe.restaurant = {}
+function orders_recipe.add_restaurant(name, bonus)
+    table.insert(orders_recipe.restaurant, { name = name, bonus = bonus or 0 })
+end
 
 require("data.const")
 require("data.group")
