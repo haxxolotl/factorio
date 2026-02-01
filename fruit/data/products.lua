@@ -24,7 +24,7 @@ local items = {
     ["tangyuan"] = { r = 1.00, g = 1.00, b = 1.00, a = 1 }, -- White
     ["dumpling"] = { r = 0.95, g = 0.90, b = 0.80, a = 1 }, -- Pale Beige
     ["fried-chicken"] = { r = 0.90, g = 0.75, b = 0.50, a = 1 }, -- Golden Brown
-    ["braised-pork"] = { r = 0.60, g = 0.30, b = 0.20, a = 1 }, -- Dark Reddish Brown
+    ["braised-beef"] = { r = 0.60, g = 0.30, b = 0.20, a = 1 }, -- Dark Reddish Brown
     ["cucumber-salad"] = { r = 0.60, g = 0.80, b = 0.40, a = 1 }, -- Light Green
     ["mapo-tofu"] = { r = 0.80, g = 0.30, b = 0.20, a = 1 }, -- Reddish Brown (with some white from tofu)
     ["carrot-juice"] = { r = 0.90, g = 0.50, b = 0.00, a = 1 }, -- Orange

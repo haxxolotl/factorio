@@ -5,7 +5,6 @@ local animal_products = {
     egg = { r = 0.98, g = 0.96, b = 0.9, a = 1 }, -- Grey 100
     ["cow-egg"] = { r = 0.98, g = 0.96, b = 0.9, a = 1 }, -- Grey 100
     ["sheep-egg"] = { r = 0.98, g = 0.96, b = 0.9, a = 1 }, -- Grey 100
-    -- pork = { r = 0.93, g = 0.8, b = 0.73, a = 1 }, -- Brown 100
     -- honey = { r = 1, g = 0.8, b = 0, a = 1 }, -- Amber 500
     feather = { r = 0.9, g = 0.9, b = 0.9, a = 1 }, -- Grey 100
     leather = { r = 0.6, g = 0.4, b = 0.2, a = 1 }, -- Brown 700

@@ -59,10 +59,17 @@ local items = {
     "waffle", -- 华夫饼
     "gingerbread", -- 姜饼
 
+    "wool", -- 羊毛
+    "cleaned-wool", -- 清洁过的羊毛
+    "dried-wool", -- 干燥的羊毛
+    "yarn", -- 纱线
+
+    "rice-grain", -- 稻谷
     "dried-rice", -- 干米
     "rice", -- 米饭
     "rice-flour", -- 米粉
 
+    -- "cocoa-pod", -- 可可豆荚
     "cocoa-bean", -- 可可豆
     "fermented-cocoa-bean", -- 发酵的可可豆
     "dried-cocoa-bean", -- 干燥的可可豆
@@ -71,9 +78,11 @@ local items = {
     "cocoa-liquor", -- 可可液
     "refined-chocolate", -- 精制巧克力
 
+    "wheat", -- 小麦
     "dried-wheat", -- 干燥的小麦
     "peeled-wheat", -- 去皮的小麦
 
+    -- "coffee-seed", -- 咖啡种子
     "fermented-coffee-seed", -- 发酵的咖啡种子
     "dried-coffee-seed", -- 干燥的咖啡种子
     "coffee-bean", -- 咖啡豆
@@ -90,10 +99,16 @@ local excludes = {
     "washed-potato",
     "peeled-potato",
 
+    "wool",
+    "cleaned-wool",
+    "dried-wool",
+    "yarn",
+
+    "rice-grain",
     "dried-rice",
     "rice-flour",
 
-    "cocoa-pod",
+    -- "cocoa-pod",
     "cocoa-bean",
     "fermented-cocoa-bean",
     "dried-cocoa-bean",
@@ -103,7 +118,7 @@ local excludes = {
     "dried-wheat",
     "peeled-wheat",
 
-    "coffee-seed",
+    -- "coffee-seed",
     "fermented-coffee-seed",
     "dried-coffee-seed",
     "coffee-bean",
@@ -113,27 +128,37 @@ local excludes = {
     "organic-fertilizer",
 }
 
-local function add_item(name)
+--特殊 subgroup 重定向
+local subgroups = {
+    ["rice-grain"] = "vegetable",
+    wheat = "vegetable",
+    wool = "animal_products",
+    ["cleaned-wool"] = "animal_products",
+    ["dried-wool"] = "animal_products",
+    yarn = "animal_products",
+}
+
+local function add_item(name, subgroup)
     data:extend {
         {
             type = "item",
             name = name,
             icon = "__fruit__/graphics/icon/" .. name .. ".png",
             icon_size = 512,
-            subgroup = "fruit_product",
+            subgroup = subgroup or "fruit_product",
             order = name,
             stack_size = 100
         }
     }
 
     if not excludes[name] then
-        orders_recipe.add_restaurant(name, 1)
+        table.insert(orders_recipe.restaurant, name)
     end
 
 end
 
 for k, name in pairs(items) do
-    add_item(name)
+    add_item(name, subgroups[name])
 end
 
 

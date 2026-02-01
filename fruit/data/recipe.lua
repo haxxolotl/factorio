@@ -86,9 +86,9 @@ RECIPE {
     enabled = false,
     energy_required = 15,
     ingredients = {
-        { type = "item", name = "cream", amount = 20 },
-        { type = "item", name = "milk", amount = 10 },
-        { type = "item", name = "sugar", amount = 5 },
+        { type = "item", name = "cream", amount = 2 },
+        { type = "item", name = "milk", amount = 1 },
+        { type = "item", name = "sugar", amount = 2 },
     },
     results = { { type = "item", amount = 1, name = "icecream" } },
     category = "icecream",
@@ -235,7 +235,7 @@ RECIPE {
     enabled = false,
     energy_required = 15,
     ingredients = {
-        { type = "item", name = "pork", amount = 1 },
+        { type = "item", name = "beef", amount = 1 },
         { type = "item", name = "salt", amount = 1 },
     },
     results = { { type = "item", amount = 1, name = "bacon" } },
@@ -1102,7 +1102,7 @@ RECIPE {
     energy_required = 40,
     ingredients = {
         { type = "item", name = "dough", amount = 2 },
-        { type = "item", name = "pork", amount = 1 }, -- 假设mod中有猪肉
+        { type = "item", name = "beef", amount = 1 }, -- 假设mod中有猪肉
         { type = "item", name = "cabbage", amount = 1 }, -- 假设mod中有白菜
         { type = "item", name = "ginger", amount = 1 }, -- 假设mod中有姜
     },
@@ -1130,16 +1130,16 @@ RECIPE {
 -- 红烧肉
 RECIPE {
     type = "recipe",
-    name = "braised-pork",
+    name = "braised-beef",
     enabled = false,
     energy_required = 70,
     ingredients = {
-        { type = "item", name = "pork", amount = 3 },
+        { type = "item", name = "beef", amount = 3 },
         { type = "item", name = "soy_sauce", amount = 2 },
         { type = "item", name = "sugar", amount = 1 },
         { type = "item", name = "ginger", amount = 1 },
     },
-    results = { { type = "item", amount = 1, name = "braised-pork" } },
+    results = { { type = "item", amount = 1, name = "braised-beef" } },
     category = "pot",
 }:add_unlock("advanced-cooking")
 
