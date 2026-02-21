@@ -809,6 +809,11 @@
     },
     
     {
+      "name": "heavy_gun_turret",
+      "enabled": true
+    },
+    
+    {
       "name": "HelfimaLib",
       "enabled": true
     },
@@ -1189,6 +1194,11 @@
     },
     
     {
+      "name": "lighthouse_radar",
+      "enabled": true
+    },
+    
+    {
       "name": "lightorio",
       "enabled": true
     },
@@ -1220,6 +1230,11 @@
     
     {
       "name": "long_stack_inserter",
+      "enabled": true
+    },
+    
+    {
+      "name": "lubrication_tower",
       "enabled": true
     },
     
@@ -1310,6 +1325,11 @@
     
     {
       "name": "mining-patch-planner",
+      "enabled": true
+    },
+    
+    {
+      "name": "module-inserter",
       "enabled": true
     },
     
@@ -1960,6 +1980,11 @@
     
     {
       "name": "zoo-animal",
+      "enabled": true
+    },
+    
+    {
+      "name": "zzz-nonstandard-beacons",
       "enabled": true
     }
   ]

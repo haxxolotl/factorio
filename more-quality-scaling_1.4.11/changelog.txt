@@ -1,0 +1,136 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.4.11
+Date: 2026-01-04
+  Bugfixes:
+    - Fixed crash with empty entity categories (eg. without Space Age)
+---------------------------------------------------------------------------------------------------
+Version: 1.4.10
+Date: 2025-12-26
+  Bugfixes:
+    - Fixed crash without Space Age
+---------------------------------------------------------------------------------------------------
+Version: 1.4.9
+Date: 2025-11-28
+  Bugfixes:
+    - Fixed crash from uninitialized data.raw["mod-data"] section
+---------------------------------------------------------------------------------------------------
+Version: 1.4.8
+Date: 2025-11-28
+  Changes:
+    - Refactored the "Change mod entities" setting into "Limit to vanilla entities" - this now affects all modification categories, as one would expect. If you had disabled "Change mod entities", you might want to enable the new setting to get the same behavior.
+    - Applied temperature/heat capacity scaling to heat exchangers
+    - Added an optional setting to add quality icons to entities of qualities above normal. This can potentially be useful when dealing with circuit signals representing placed entities, but is generally unnecessary.
+    - Added `entity-clones` mod-data to help mod compatibility with quality-scaled entities
+    - Now ignores entities listed in `clone-blacklist` mod-data, as a proposed interface to prevent mod incompatibility
+  Bugfixes:
+    - Fixed events when replacing entities (mod compatibility)
+---------------------------------------------------------------------------------------------------
+Version: 1.4.5
+Date: 2025-07-08
+  Bugfixes:
+    - Fixed crash when placing down trains
+---------------------------------------------------------------------------------------------------
+Version: 1.4.4
+Date: 2025-07-07
+  Bugfixes:
+    - Fixed possible runtime error with Fill4Me
+---------------------------------------------------------------------------------------------------
+Version: 1.4.3
+Date: 2025-05-29
+  Bugfixes:
+    - Fixed incompatibility with the combination of Cerys and Bobs Power
+---------------------------------------------------------------------------------------------------
+Version: 1.4.2
+Date: 2025-05-11
+  Bugfixes:
+    - Fixed incompatibility of underground length scaling with Infinite Quality Tiers mod
+---------------------------------------------------------------------------------------------------
+Version: 1.4.1
+Date: 2025-05-11
+  Bugfixes:
+    - Fixed crash on load
+---------------------------------------------------------------------------------------------------
+Version: 1.4.0
+Date: 2025-05-11
+  Features:
+    - Added scaling option for agricultural towers (speed/area/both)
+  Bugfixes:
+    - Extra entities are now hidden from Factoripedia
+    - Fixed possible exploit with upgrade planners or modified blueprints
+    - Fixed duplication glitches occuring when fast replace fails
+---------------------------------------------------------------------------------------------------
+Version: 1.3.3
+Date: 2025-04-19
+  Bugfixes:
+    - Fixed underground length error due to a typo
+    - Fixed typo in braking_force calculation
+---------------------------------------------------------------------------------------------------
+Version: 1.3.1
+Date: 2025-04-18
+  Features:
+    - Added scaling for underground pipe length (linked to "underground scaling" setting)
+    - Dragging a Q-picked quality belt should respect scaled underground distance now (quality items still assume the length of normal quality undergrounds; the quality-belts mod fixes that by replacing quality items in your inventory, and should be compatible)
+  Bugfixes:
+    - Fixed heat_radius error
+    - Fixed train power calculation for modded trains
+    - Hardened braking force calculation and added scaling of robot max_speed (which limits robot speed research, and might be set for modded robots)
+---------------------------------------------------------------------------------------------------
+Version: 1.3.0
+Date: 2025-04-17
+  Features:
+    - Added heat capacity scaling for reactors and heat pipes, as well as (off by default) temperature and heating range scaling.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.3
+Date: 2025-04-08
+  Features:
+    - Added replacement delay for belts and undergrounds, allowing the belt dragging functionality to work as expected.
+  Bugfixes:
+    - Blacklisted Factorissimo 3 internal storage tanks (should fix broken functionality)
+    - Fixed underground and loader orientation issues
+---------------------------------------------------------------------------------------------------
+Version: 1.2.2
+Date: 2025-03-27
+  Features:
+    - Actually enabled the underground length scaling setting now. Manual drag placement of belts/undergrounds does currently have some annoyances!
+---------------------------------------------------------------------------------------------------
+Version: 1.2.1
+Date: 2025-03-27
+  Bugfixes:
+    - Fixed typos that caused a crash with certain settings
+---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: 2025-03-27
+  Features:
+    - Optional mining drill scaling (speed and/or area)
+    - Optional belt speed and underground length scaling
+    - Optional WIP construction/logistic robot scaling (speed and/or cargo capacity)
+  Bugfixes:
+    - Fixed crash related to icon size that was occuring on some systems
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2025-03-20
+  Features:
+    - Rocket silo quality now affects all parts of the launch sequence (incl. door blinking time and launch delay)
+  Bugfixes:
+    - Pipette (Q) should now work reliably with scaled entities
+    - Fixed locomotives and wagons not being replaced with their scaled versions
+---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 2025-03-16
+  Bugfixes:
+    - Made previous fix apply to all existing saves
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 2025-03-16
+  Bugfixes:
+    - Fixed quality prototypes not being replaced correctly
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 2025-03-13
+  Features:
+    - Added "quadratic" fuel consumption option
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2025-03-13
+  Features:
+    - Initial release
