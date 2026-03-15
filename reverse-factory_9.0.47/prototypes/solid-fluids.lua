@@ -57,20 +57,37 @@ end
 for _, fluid in pairs(customFluidRecipe) do
 	overrideFluidRecipe(fluid)
 end
+
+local function addCraftingCategory(entity_name, entity_types, category)
+	for _, entity_type in pairs(entity_types) do
+		local entity = Data(entity_name, entity_type)
+		if entity:is_valid() then
+			entity.crafting_categories = entity.crafting_categories or {}
+			for _, existing_category in pairs(entity.crafting_categories) do
+				if existing_category == category then
+					return true
+				end
+			end
+			table.insert(entity.crafting_categories, category)
+			return true
+		end
+	end
+	return false
+end
+
 -- Add the fluid conversion recipes to the auto-barreling machines below
 if mods["auto-barrel"] then
-	table.insert(Data("unbarreling-machine","furnace").crafting_categories,"solids-into-fluids")
+	addCraftingCategory("unbarreling-machine", {"furnace"}, "solids-into-fluids")
 end
 if mods["fct-barreling-machine"] then
-	table.insert(Data("barreling-machine","furnace").crafting_categories,"solids-into-fluids")
+	addCraftingCategory("barreling-machine", {"furnace"}, "solids-into-fluids")
 end
 if mods["pelagos"] then
-	-- Pelagos may update in future (hopefully!) to make barreling machine a furnace-type entity
-	local entity_type = "furnace"
-	if not Data("barreling-machine", entity_type):is_valid() then
-		entity_type = "assembling-machine"
-	end
-	table.insert(Data("barreling-machine",entity_type).crafting_categories,"solids-into-fluids")
+	-- Older Pelagos versions used "barreling-machine"; newer ones use barreling_machines entities.
+	addCraftingCategory("barreling-machine", {"furnace", "assembling-machine"}, "solids-into-fluids")
+	addCraftingCategory("burner-barreling-machine", {"assembling-machine"}, "solids-into-fluids")
+	addCraftingCategory("electric-barreling-machine", {"assembling-machine"}, "solids-into-fluids")
+	addCraftingCategory("diesel-barreling-machine", {"assembling-machine"}, "solids-into-fluids")
 	-- if Pelagos enabled, barreling machine is locked behind another planet
 	-- so we should just allow solid fluids in chemical plants regardless
 	rf.allow_chemplant = true

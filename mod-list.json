@@ -160,12 +160,12 @@
     
     {
       "name": "Arcanyx",
-      "enabled": true
+      "enabled": false
     },
     
     {
       "name": "ArcanyxAssets",
-      "enabled": true
+      "enabled": false
     },
     
     {
@@ -2045,7 +2045,7 @@
     
     {
       "name": "Voidcraft",
-      "enabled": true
+      "enabled": false
     },
     
     {
