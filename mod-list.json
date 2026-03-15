@@ -159,12 +159,27 @@
     },
     
     {
+      "name": "Arcanyx",
+      "enabled": true
+    },
+    
+    {
+      "name": "ArcanyxAssets",
+      "enabled": true
+    },
+    
+    {
       "name": "ArmouredBiters",
       "enabled": true
     },
     
     {
       "name": "AsphaltRoadsPatched",
+      "enabled": true
+    },
+    
+    {
+      "name": "AsteroidBelt",
       "enabled": true
     },
     
@@ -215,6 +230,21 @@
     
     {
       "name": "barreling-group2",
+      "enabled": true
+    },
+    
+    {
+      "name": "barreling_machines",
+      "enabled": true
+    },
+    
+    {
+      "name": "Battleship",
+      "enabled": true
+    },
+    
+    {
+      "name": "Battleship-graphics",
       "enabled": true
     },
     
@@ -469,6 +499,11 @@
     },
     
     {
+      "name": "cr-commons",
+      "enabled": true
+    },
+    
+    {
       "name": "cubium",
       "enabled": true
     },
@@ -549,6 +584,11 @@
     },
     
     {
+      "name": "dynamic_platform_lighting",
+      "enabled": true
+    },
+    
+    {
       "name": "EditorExtensions",
       "enabled": true
     },
@@ -595,6 +635,11 @@
     
     {
       "name": "enhanced-shadows",
+      "enabled": true
+    },
+    
+    {
+      "name": "entity-gui-lib",
       "enabled": true
     },
     
@@ -709,6 +754,11 @@
     },
     
     {
+      "name": "fcpu",
+      "enabled": true
+    },
+    
+    {
       "name": "fdsl",
       "enabled": true
     },
@@ -760,6 +810,11 @@
     
     {
       "name": "FNEI",
+      "enabled": true
+    },
+    
+    {
+      "name": "foliax",
       "enabled": true
     },
     
@@ -885,6 +940,11 @@
     
     {
       "name": "inventory-repair",
+      "enabled": true
+    },
+    
+    {
+      "name": "IridescentIndustry",
       "enabled": true
     },
     
@@ -1165,7 +1225,7 @@
     
     {
       "name": "lane-filtered-loaders",
-      "enabled": true
+      "enabled": false
     },
     
     {
@@ -1220,6 +1280,21 @@
     
     {
       "name": "linox",
+      "enabled": true
+    },
+    
+    {
+      "name": "loader-utils",
+      "enabled": true
+    },
+    
+    {
+      "name": "logistics-insights",
+      "enabled": true
+    },
+    
+    {
+      "name": "long_range_delivery_drones_peterwolf_fork",
       "enabled": true
     },
     
@@ -1389,6 +1464,16 @@
     },
     
     {
+      "name": "Nexus",
+      "enabled": true
+    },
+    
+    {
+      "name": "Nexus-Graphics",
+      "enabled": true
+    },
+    
+    {
       "name": "nixie-tubes",
       "enabled": true
     },
@@ -1396,6 +1481,16 @@
     {
       "name": "OilOutpostPlanner",
       "enabled": true
+    },
+    
+    {
+      "name": "omnia",
+      "enabled": false
+    },
+    
+    {
+      "name": "omnilib",
+      "enabled": false
     },
     
     {
@@ -1459,6 +1554,11 @@
     },
     
     {
+      "name": "planet-crucible",
+      "enabled": false
+    },
+    
+    {
       "name": "planet-hexalith",
       "enabled": true
     },
@@ -1485,6 +1585,11 @@
     
     {
       "name": "planetaris-hyarion",
+      "enabled": true
+    },
+    
+    {
+      "name": "planetaris-tellus",
       "enabled": true
     },
     
@@ -1611,6 +1716,11 @@
     {
       "name": "reverse-factory",
       "enabled": true
+    },
+    
+    {
+      "name": "rigor-module",
+      "enabled": false
     },
     
     {
@@ -1819,11 +1929,6 @@
     },
     
     {
-      "name": "stacking-loaders",
-      "enabled": true
-    },
-    
-    {
       "name": "Starmap_Nexuz",
       "enabled": true
     },
@@ -1935,6 +2040,11 @@
     
     {
       "name": "visible-pollutants",
+      "enabled": true
+    },
+    
+    {
+      "name": "Voidcraft",
       "enabled": true
     },
     

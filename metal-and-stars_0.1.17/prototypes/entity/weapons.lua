@@ -1,0 +1,139 @@
+
+-- data:extend({
+--     {
+--         type = "ammo-turret",
+--         name = "Schall-sniper-turret",
+--         icons = dri["Schall-sniper-turret"].icons,
+--         flags = { "placeable-player", "player-creation" },
+--         minable = { mining_time = 0.5, result = "Schall-sniper-turret" },
+--         max_health = 400,
+--         corpse = "gun-turret-remnants", -- "medium-remnants",
+--         dying_explosion = "gun-turret-explosion", -- "medium-explosion",
+--         collision_box = {{ -0.7, -0.7}, {0.7, 0.7}},
+--         selection_box = {{ -1, -1}, {1, 1}},
+--         damaged_trigger_effect = hit_effects.entity(),
+--         rotation_speed = 0.015,
+--         preparing_speed = 0.08,
+--         preparing_sound = sounds.gun_turret_activate,
+--         folding_sound = sounds.gun_turret_deactivate,
+--         inventory_size = 1,
+--         automated_ammo_count = 10,
+--         attacking_speed = 0.5,
+--         alert_when_attacking = true,
+--         -- circuit_connector = circuit_connector_definitions["gun-turret"],
+--         circuit_wire_max_distance = default_circuit_wire_max_distance,
+--         open_sound = {filename = "__base__/sound/open-close/turret-open.ogg", volume = 0.6},
+--         close_sound = {filename = "__base__/sound/open-close/turret-close.ogg", volume = 0.6},
+--         icon_draw_specification = {scale = 0.7},
+    
+--         -- folded_animation = sniper_sheet{direction_count = 8, line_length = 1},
+--         -- preparing_animation = sniper_sheet{direction_count = 8, line_length = 1},
+--         -- prepared_animation = sniper_sheet{},
+--         -- attacking_animation = sniper_sheet{},
+--         -- folding_animation = sniper_sheet{direction_count = 8, line_length = 1, run_mode = "backward"},
+--         folded_animation =
+--         {
+--           layers =
+--           {
+--             AMT_gun_turret_extension({tint = {r=0.5, g=0.5, b=0.5}}, {frame_count=1, line_length = 1}),
+--             gun_turret_extension_mask{frame_count=1, line_length = 1},
+--             gun_turret_extension_shadow{frame_count=1, line_length = 1}
+--           }
+--         },
+--         preparing_animation =
+--         {
+--           layers =
+--           {
+--             AMT_gun_turret_extension({tint = {r=0.5, g=0.5, b=0.5}}, {}),
+--             gun_turret_extension_mask{},
+--             gun_turret_extension_shadow{}
+--           }
+--         },
+--         prepared_animation = AMT_gun_turret_attack({tint = {r=0.5, g=0.5, b=0.5}}, {frame_count=1}),
+--         attacking_animation = AMT_gun_turret_attack({tint = {r=0.5, g=0.5, b=0.5}}, {}),
+--         folding_animation =
+--         {
+--           layers =
+--           {
+--             AMT_gun_turret_extension({tint = {r=0.5, g=0.5, b=0.5}}, {run_mode = "backward"}),
+--             AMT_gun_turret_extension_mask({}, {run_mode = "backward"}),
+--             gun_turret_extension_shadow{run_mode = "backward"}
+--           }
+--         },
+--         graphics_set =
+--         {
+--           base_visualisation =
+--           {
+--             animation =
+--             {
+--               layers =
+--               {
+--                 {
+--                   filename = "__base__/graphics/entity/gun-turret/gun-turret-base.png",
+--                   priority = "high",
+--                   width = 150,
+--                   height = 118,
+--                   shift = util.by_pixel(0.5, -1),
+--                   scale = 0.5
+--                 },
+--                 {
+--                   filename = "__base__/graphics/entity/gun-turret/gun-turret-base-mask.png",
+--                   flags = {"mask", "low-object"},
+--                   line_length = 1,
+--                   width = 122,
+--                   height = 102,
+--                   shift = util.by_pixel(0, -4.5),
+--                   apply_runtime_tint = true,
+--                   scale = 0.5
+--                 }
+--               }
+--             }
+--           }
+--         },
+    
+--         resistances =
+--         {
+--           { type = "fire",      decrease = 10,  percent = 30 },
+--           { type = "physical",  decrease =  5,  percent = 30 },
+--           { type = "impact",    decrease = 50,  percent = 50 },
+--           { type = "explosion", decrease = 15,  percent = 50 },
+--           { type = "acid",      decrease =  5,  percent = 20 },
+--           { type = "laser",     decrease = 10,  percent = 40 },
+--           { type = "electric",  decrease = 10,  percent = 40 }
+--         },
+--         attack_parameters =
+--         {
+--           type = "projectile",
+--           -- ammo_category = "Schall-sniper-bullet",
+--           ammo_categories = {"bullet", "Schall-sniper-bullet"},
+--           warmup = 60, --0,
+--           cooldown = 120, --6,
+--           damage_modifier = 2, --4, --8, --4, --1,
+--           projectile_creation_distance = 0.4, --1.6,
+--           projectile_center = {0.6, 0},
+--           shell_particle =
+--           {
+--             name = "shell-particle",
+--             direction_deviation = 0.1,
+--             speed = 0.1,
+--             speed_deviation = 0.03,
+--             creation_distance = -1.925,
+--             center = {-0.0625, 1.5},--{0, 0},
+--             starting_frame_speed = 0.2,
+--             starting_frame_speed_deviation = 0.1
+--           },
+--           range = 48, --40, --36, --18,
+--           min_range = 8,
+--           health_penalty = -1,
+--           sound =
+--           {
+--             {
+--               filename = "__SchallTankPlatoon__/sound/sniper-rifle-gunshot.ogg",
+--               volume = 0.6
+--             }
+--           },
+--           lead_target_for_projectile_speed = (cfg1.bullet_proj and 1.5) or 0,
+--         },
+--         call_for_help_radius = 40
+--       },
+-- })

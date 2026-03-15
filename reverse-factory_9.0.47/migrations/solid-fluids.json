@@ -1,0 +1,12 @@
+{
+  "item":
+  [
+    ["rf-solid-water", "solid-water"],
+    ["rf-solid-crude-oil", "solid-crude-oil"],
+    ["rf-solid-heavy-oil", "solid-heavy-oil"],
+    ["rf-solid-light-oil", "solid-light-oil"],
+    ["rf-solid-petroleum-gas", "solid-petroleum-gas"],
+    ["rf-solid-sulfuric-acid", "solid-sulfuric-acid"],
+    ["rf-solid-lubricant", "solid-lubricant"]
+  ]
+}

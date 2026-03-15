@@ -16,6 +16,11 @@ local TRAINS = {
   ["artillery-wagon"] = true
 }
 
+-- Fluid containers (storage-tank): use destroy+create so fluid is restored on quality replace, like fluid-wagon
+local FLUID_CONTAINERS = {
+  ["storage-tank"] = true
+}
+
 -- SECTION code taken from train-upgrader mod
 local carriage_inventories = {
   defines.inventory.fuel,
@@ -358,6 +363,13 @@ on_built = function(data, now)
         if ne.train and ne.train.manual_mode ~= nil then
             ne.train.schedule = sched
             ne.train.manual_mode = manual or false
+        end
+    elseif FLUID_CONTAINERS[entity.type] then
+        -- storage-tank (and fluid-wagon when not in train): destroy+create so fluid is restored on quality replace
+        entity.destroy({raise_destroy=true})
+        local ne = surface.create_entity(info)
+        if ne and ne.valid then
+            restore_fluidbox(ne, fluids)
         end
     elseif entity.type == "construction-robot" or entity.type == "logistic-robot" then
       -- mobile entities without configuration

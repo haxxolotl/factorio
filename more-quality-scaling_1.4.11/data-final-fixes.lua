@@ -223,9 +223,9 @@ if settings.startup["mqs-storage-tank-changes"].value then
             end
             local tank = table.deepcopy(original)
             defaultChanges(tank, qname)
-    
+            -- capacity scales with quality (like fluid wagons); volume scaled per quality variant
             tank.fluid_box.volume = tank.fluid_box.volume * qvalue
-    
+
             table.insert(new, tank)
         until true; end
     end

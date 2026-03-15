@@ -1,0 +1,18 @@
+{
+    "entity":
+    [
+      ["gravity-assembler", "microgravity-assembler"],
+      ["conduit", "neumann-conduit"]
+    ],
+    "item":
+    [
+      ["gravity-assembler", "microgravity-assembler"],
+      ["conduit", "neumann-conduit"]
+    ],
+    "recipe":
+    [
+      ["charcoal", "pyrolytic-charcoal"],
+      ["gravity-assembler", "microgravity-assembler"],
+      ["conduit", "neumann-conduit"]
+    ]
+  }

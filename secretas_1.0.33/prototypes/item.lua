@@ -214,7 +214,7 @@ data:extend(
         drop_sound = item_sounds.module_inventory_move,
         stack_size = 50,
         weight = 25 * kg,
-        effect = { quality = 0.88, speed = -0.05 },
+        effect = { quality = 1, speed = -0.05 },
         default_import_location = "frozeta",
     },
     {
@@ -232,7 +232,7 @@ data:extend(
         drop_sound = item_sounds.module_inventory_move,
         stack_size = 50,
         weight = 25 * kg,
-        effect = { productivity = 0.15, speed = -0.2, pollution = 0.15, consumption = 1.0  },
+        effect = { productivity = 0.2, speed = -0.2, pollution = 0.15, consumption = 1.0  },
         default_import_location = "frozeta",
     },
     {
@@ -250,7 +250,7 @@ data:extend(
         drop_sound = item_sounds.module_inventory_move,
         stack_size = 50,
         weight = 25 * kg,
-        effect = { speed = 0.7, quality = -0.3, consumption = 0.95 },
+        effect = { speed = 1, quality = -0.2, consumption = 0.95 },
         beacon_tint =
         {
           primary = {0.441, 0.714, 1.000, 1.000}, -- #70b6ffff
@@ -275,7 +275,7 @@ data:extend(
         drop_sound = item_sounds.module_inventory_move,
         stack_size = 50,
         weight = 25 * kg,
-        effect = { consumption = -0.6 },
+        effect = { consumption = -0.7 },
         beacon_tint =
         {
           primary = {0, 1, 0},
