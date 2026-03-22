@@ -239,11 +239,6 @@
     },
     
     {
-      "name": "Battleship",
-      "enabled": true
-    },
-    
-    {
       "name": "Battleship-graphics",
       "enabled": true
     },
@@ -1224,11 +1219,6 @@
     },
     
     {
-      "name": "lane-filtered-loaders",
-      "enabled": false
-    },
-    
-    {
       "name": "LargeLamp",
       "enabled": true
     },
@@ -1290,11 +1280,6 @@
     
     {
       "name": "logistics-insights",
-      "enabled": true
-    },
-    
-    {
-      "name": "long_range_delivery_drones_peterwolf_fork",
       "enabled": true
     },
     
@@ -1701,11 +1686,6 @@
     {
       "name": "RenaiTransportation",
       "enabled": true
-    },
-    
-    {
-      "name": "Repair_Turret",
-      "enabled": false
     },
     
     {
