@@ -1877,10 +1877,6 @@
       "enabled": true
     },
     {
-      "name": "inline-rail-signals",
-      "enabled": true
-    },
-    {
       "name": "space-elevator",
       "enabled": false
     },
