@@ -1873,6 +1873,10 @@
       "enabled": false
     },
     {
+      "name": "Space-Efficient-Rail-Signals-2",
+      "enabled": true
+    },
+    {
       "name": "space-elevator",
       "enabled": false
     },
@@ -2109,7 +2113,7 @@
       "enabled": false
     },
     {
-      "name": "Space-Efficient-Rail-Signals-2",
+      "name": "pipe-windows",
       "enabled": true
     }
   ]
