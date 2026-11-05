@@ -1,0 +1,4 @@
+# Factorio has to see these files byte-for-byte on every PC, so git never converts line endings.
+* -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+mod-settings.dat binary

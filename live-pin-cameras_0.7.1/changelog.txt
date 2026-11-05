@@ -1,0 +1,105 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.7.1
+Date: 2026-09-12
+  Bugfixes:
+    - Distant machine clicks enter native remote view before opening instead of refusing inspection.
+    - Retained native remote controller during inventory interaction; no character-mode reach bypass.
+    - Replaced pan binding with Shift+right mouse; duplicate input events no longer toggle panning off.
+    - Interior hover-cell transitions no longer cancel camera panning.
+  Changes:
+    - Empty-hand right click requests robot deconstruction; Shift+right drag is reserved for panning.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.7.0
+Date: 2026-09-05
+  Features:
+    - Camera manager (Ctrl+Shift+L or click i): names, hide/show, view-only mode, deletion and native remote view.
+    - X now hides cameras for later restoration without bookmarks.
+    - Added upgrade planners and Ctrl-click two-corner area orders; Shift cancels.
+    - Cursor-anchored wheel zoom, screen-bound clamping and configurable per-player camera limits.
+  Optimizations:
+    - Replaced full-view entity-to-cell rasterization with local on-demand hover queries.
+    - Bounded overlay grids to 1024 cells maximum; 600 cells for a 960px camera instead of 2400.
+    - Skipped hidden/disconnected updates and redundant static-camera writes.
+  Bugfixes:
+    - Removed cameras safely when their surface is deleted; cancelled unfinished gestures on reconnect.
+    - Accepted both standard Factorio map-position forms in the remote interface.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.0
+Date: 2026-09-05
+  Features:
+    - Left-click with placeable items, cursor ghosts or blueprints to request robot construction in cameras.
+    - Deconstruction planner clicks mark targets for robots; Shift-click cancels with native filters.
+    - Construction works across surfaces without moving the player or consuming held materials.
+  Notes:
+    - Click-by-click placement only; no native building preview or area drag inside cameras.
+    - Physical reach checks remain in place for machine inventory interaction.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.5.1
+Date: 2026-09-05
+  Bugfixes:
+    - Required physical character reach before opening inventories from cameras.
+    - Closed camera-opened inventories when the target leaves interaction range.
+    - Replaced custom name/health popups with native selected-entity inspection.
+    - Restored selection and tooltip settings after leaving camera hover.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.5.0
+Date: 2026-09-05
+  Features:
+    - Independent Create live camera shortcut, default Ctrl+Shift+C; no native bookmark created.
+    - Added a title-bar info button for camera instructions.
+  Bugfixes:
+    - Preassigned entity name and health tooltips across projected selection boxes.
+    - Removed instruction tooltips from empty camera space.
+    - Reduced pan steps from 32 to 16 GUI pixels and anchored movement to the grabbed cell.
+    - Cancelled pending pan when leaving the view, interacting, zooming or rebuilding windows.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 2026-09-03
+  Features:
+    - Added live camera panning while the configured pan control is held.
+    - Added entity-aware hover tooltips and selection-box-based left-click interaction.
+    - Routed camera interaction through an explicit left-mouse input for reliable press handling.
+  Changes:
+    - Window size is committed after slider movement stops instead of resizing beneath the drag.
+    - Camera wheel zoom now consumes the main viewport zoom while preserving normal world zoom.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.3.1
+Date: 2026-09-02
+  Features:
+    - Added mouse-wheel zoom while the pointer is over a live camera view.
+    - Kept the zoom slider and numeric field synchronized with wheel zoom.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 2026-09-02
+  Features:
+    - Put the zoom and window-size controls on one compact row.
+    - Added a configurable camera-pan control, bound to right mouse by default.
+    - Added left-click interaction with entities visible in a live camera.
+    - Added entity prototype tooltips to the camera interaction surface.
+  Bugfixes:
+    - Made camera panning preserve the world point beneath the cursor without accumulating drag multipliers.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2026-09-01
+  Features:
+    - Added independent live resizing from 320 to 960 pixels for every camera window.
+    - Added CCTV-style panning by dragging directly on the live camera image.
+  Bugfixes:
+    - Kept the reset and close buttons visible when an entity has a long localized name.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2026-09-01
+  Features:
+    - Added optional Live Pin mode linked to Factorio's normal Pin control.
+    - Added multiple simultaneous live camera windows.
+    - Added draggable title bars and per-window preview-distance controls.
+    - Added persistent window targets, zoom values, and locations.

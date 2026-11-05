@@ -1,1 +1,53 @@
+# Mods from the mod portal are not stored; Factorio downloads them (Load game > Sync mods with save).
 *.zip
+*.codex-unpatched
+
+# Mods not on the mod portal byte-for-byte (patched, custom or unpublished):
+!Battleship-graphics_0.1.1.zip
+!Battleship-harry-truman-graphics_0.1.4.zip
+!Battleship-harry-truman_0.1.31.zip
+!Battleship_0.4.0.zip
+!blueprint_flip_and_turn_200.8.6.zip
+!brake-squeal-modded_2.0.9.zip
+!ch-concentrated-solar_0.6.0.zip
+!circuit_visualizer_2.0.2.zip
+!common-prototypes-graphics_0.0.2.zip
+!Concrete-Tints_2.0.1.zip
+!data-utils_0.10.4.zip
+!Dectorio_0.13.1.zip
+!DistributionRequestPlanner_0.0.5.zip
+!electric-trains_0.4.3.zip
+!electricboiler_2.0.1.zip
+!entity-gui-lib_0.1.9.zip
+!entity-symmetry_2.1.12.zip
+!even-distribution_2.1.0.zip
+!genshin-impact-music_2.0.0.zip
+!Hover-Car_0.2.18.zip
+!HuTaoSkin_1.0.1.zip
+!infinite-belt-stacking-by-orillien_1.0.2.zip
+!InlaidLampsExtended_2.0.0.zip
+!inserter-throughput_0.1.6.zip
+!Inventory Sensor_2.0.6.zip
+!item-cam-2_0.10.1.zip
+!JapaneseStations_2.2.0.zip
+!LargeLamp_2.1.0.zip
+!multispoil_2.1.2.zip
+!Namelists_2.2.0.zip
+!not-enough-parameters_1.0.1.zip
+!Orphan Finder_1.2.2.zip
+!PipeVisualizer-Updated_2.4.4.zip
+!power-grid-comb_2.0.0.zip
+!PowerOverload_2.3.7.zip
+!productivity-indicator_1.0.0.zip
+!pypostprocessing_3.1.7.zip
+!SchallCircuitGroup_2.0.1.zip
+!SchallRemainsPickup_2.0.2.zip
+!science-pack-glow-reborn_1.0.4.zip
+!stdlib2_2.0.1.zip
+!street-freight_1.3.0.zip
+!TjSignBoards_1.200.4.zip
+!tooltip-lib_0.1.1.zip
+!train-loader_0.9.1.zip
+!Transport_Drones_2.4.0.zip
+!underground-pipe-pack_2.0.7.zip
+!YARM_1.0.5.zip

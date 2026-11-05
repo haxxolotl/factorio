@@ -1,0 +1,11 @@
+{
+  "name": "live-pin-cameras",
+  "version": "0.7.1",
+  "title": "Live Pin Cameras",
+  "author": "liuen",
+  "factorio_version": "2.1",
+  "dependencies": [
+    "base >= 2.0.0"
+  ],
+  "description": "Independent live camera windows, created with Ctrl+Shift+C. Draggable, resizable views with zoom, entity interaction and hover details, without creating bookmarks."
+}
