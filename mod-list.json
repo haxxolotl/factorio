@@ -2137,6 +2137,10 @@
       "enabled": true
     },
     {
+      "name": "fluid-bundles",
+      "enabled": true
+    },
+    {
       "name": "sortable-time-usage",
       "enabled": true
     },
